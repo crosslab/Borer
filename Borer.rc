@@ -1,0 +1,1026 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "editcmd.h"
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XT_IDC_HSPLITBAR        CURSOR  DISCARDABLE     "res\\splith.cur"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_MOVE         CURSOR  DISCARDABLE     "res\\H_MOVE.CUR"
+IDC_HANDCUR             CURSOR  DISCARDABLE     "res\\handcur.cur"
+IDC_CURSOR_POINT        CURSOR  DISCARDABLE     "res\\H_POINT.CUR"
+IDC_CURSOR1             CURSOR  DISCARDABLE     "res\\cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ITest.ico"
+IDI_ICONNPAD            ICON    DISCARDABLE     "res\\iconthre.ico"
+IDI_ICONGRF             ICON    DISCARDABLE     "res\\GRAPH03.ico"
+IDI_ICONBUSY            ICON    DISCARDABLE     "res\\GPS2.ico"
+IDI_ICONIDLE            ICON    DISCARDABLE     "res\\GPS1.ico"
+IDI_ICONDEV             ICON    DISCARDABLE     "res\\CONFIG.ICO"
+IDI_ICONPRJ             ICON    DISCARDABLE     "res\\catalog.ico"
+IDI_ICON4               ICON    DISCARDABLE     "res\\icon5.ico"
+IDI_ICON3               ICON    DISCARDABLE     "res\\icon4.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\icon3.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\icon2.ico"
+IDR_BorerTYPE           ICON    DISCARDABLE     "res\\BorerDoc.ico"
+IDI_PDKIDLE             ICON    DISCARDABLE     "res\\PDK1.ico"
+IDI_PDKACT              ICON    DISCARDABLE     "res\\PDK2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_RIGHT_TIP MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickEditView"
+    BEGIN
+        MENUITEM "剪切(&U)\tCtrl+X",            ID_EDIT_CUT, GRAYED
+        MENUITEM "拷贝(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "粘贴(&V)\tCtrl+V",            ID_EDIT_PASTE, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "清空(&E)",                    ID_EDIT_CLEAR
+        MENUITEM "全选(&A)\tCtrl+A",            ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "查找\tCtrl+F",                ID_EDIT_FIND
+        MENUITEM "查找下一个\tF3",              ID_EDIT_REPEAT
+        MENUITEM SEPARATOR
+        MENUITEM "保存(&S)",                    ID_TIP_SAVE
+        MENUITEM "字体(&F)",                    ID_TIP_FONT
+    END
+    POPUP "RClickTabView"
+    BEGIN
+        MENUITEM "Docking View",                IDC_TAB_DOCKINGVIEW
+        MENUITEM "Hide",                        IDC_TAB_HIDE
+        MENUITEM SEPARATOR
+        MENUITEM "ClassView",                   IDC_TAB_CLASSVIEW
+        MENUITEM "ResourceView",                IDC_TAB_RESOURCEVIEW
+        MENUITEM "FileView",                    IDC_TAB_FILEVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "Properties",                  IDC_TAB_PROPERTIES
+    END
+END
+
+IDR_BorerTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "打开(&O)\tCtrl+O",            ID_FILE_LOAD
+        MENUITEM "保存(&S)",                    ID_SAVEFILEC
+        MENUITEM "另存为(&A)",                  ID_FILESAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "新建项目(&N)",                ID_ITP_NEW
+        MENUITEM "打开项目(&K)",                ID_ITP_OPEN
+        MENUITEM "关闭项目(&C)",                ID_ITP_CLOSE
+        MENUITEM "保存项目(&P)",                ID_ITP_SAVE
+        MENUITEM "另存项目(&Z)",                ID_ITP_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "重做(&R)\tCtrl+Y",            ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "&复制\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&粘贴\tCtrl+V",               ID_EDIT_PASTE
+        MENUITEM "&删除\tDel",                  ID_EDIT_DELETE
+        MENUITEM "全选\tCtrl+A",                ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "查找\tCtrl+F",                ID_EDIT_FIND
+        MENUITEM "查找下一个\tF3",              ID_EDIT_REPEAT
+        MENUITEM "查找上一个\tShift+F3",        ID_EDIT_FIND_PREVIOUS
+        MENUITEM "替换\tCtrl+H",                ID_EDIT_REPLACE
+        MENUITEM "定位\tCtrl+G",                ID_EDIT_GOLINE
+        MENUITEM SEPARATOR
+        MENUITEM "只读",                        ID_READ_ONLY
+        MENUITEM SEPARATOR
+        POPUP "书签"
+        BEGIN
+            MENUITEM "Toggle Bookmark",             ID_EDIT_TOGGLE_BOOKMARK
+            MENUITEM "Next Bookmark",               ID_EDIT_GOTO_NEXT_BOOKMARK
+
+            MENUITEM "Previous bookmark",           ID_EDIT_GOTO_PREV_BOOKMARK
+
+            MENUITEM "Clear All Bookmarks",         ID_EDIT_CLEAR_ALL_BOOKMARKS
+
+        END
+        POPUP "断点"
+        BEGIN
+            MENUITEM "Breakpoint",                  ID_EDIT_TOGGLE_BLACKPOINT
+
+            MENUITEM "Next Breakpoint",             ID_EDIT_GOTO_NEXT_BREAKPOINT
+
+            MENUITEM "Previous breakpoint",         ID_EDIT_GOTO_PREV_BREAKPOINT
+
+            MENUITEM "Clear all breakpoints",       ID_EDIT_CLEAR_ALL_BREAKPOINTS
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Backspace at start of line",  ID_EDIT_DISABLEBSATSOL
+        MENUITEM "Drag-and-drop text editing",  ID_EDIT_DISABLEDRAGANDDROP
+        MENUITEM SEPARATOR
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "显示自定义命令(&C)",          ID_SCRIPTTOOLBAR
+        MENUITEM "显示执行方式(&X)",            ID_RUNBAR
+        MENUITEM SEPARATOR
+        MENUITEM "测试列表(&P)",                ID_CMD_SYSINFO
+        MENUITEM "显示信息(&E)",                ID_CMD_SHOWINFO
+        MENUITEM "显示DEBUG数据",               ID_MDMBAR
+        MENUITEM SEPARATOR
+    END
+    POPUP "系统(&S)"
+    BEGIN
+        MENUITEM "面板测试",                    ID_PaneTest
+        MENUITEM "脚本测试",                    ID_ScriptTest
+        MENUITEM SEPARATOR
+        MENUITEM "串口测试",                    ID_SEND_PORT
+        MENUITEM "共享内存",                    ID_SEND_MEM
+        MENUITEM "数据库",                      ID_SEND_DATABASE
+        MENUITEM SEPARATOR
+        MENUITEM "自动发送消息",                ID_AUTO_SEND
+        MENUITEM "创建测试报告",                ID_CREATE_REPORT
+        MENUITEM "等待终端回应包",              ID_WAITRESPONSE
+        MENUITEM SEPARATOR
+        MENUITEM "设置时间参数",                ID_TIEM_SET
+        MENUITEM "设置头文件路径",              ID_MENUHEADPATH
+    END
+    POPUP "自定义命令(&C)"
+    BEGIN
+        MENUITEM "生成主框架",                  ID_SCRIPT_MAINFRAME
+        MENUITEM SEPARATOR
+        MENUITEM "测试任务开始",                ID_SCRIPT_BEGIN
+        MENUITEM "测试任务结束",                ID_SCRIPT_END
+        MENUITEM SEPARATOR
+        MENUITEM "重新执行",                    ID_SCRIPT_PDKREEXCUTE
+        MENUITEM "延时时间",                    ID_MN_DELAYTIME
+        MENUITEM "提示信息",                    ID_SCRIPT_STRTRACE
+        MENUITEM "弹出信息",                    ID_SCRIPT_MESSAGEBOX
+        MENUITEM SEPARATOR
+        MENUITEM "设置断点",                    ID_SCRIPT_DEBUGBREAK
+    END
+    POPUP "窗口(&W)"
+    BEGIN
+        MENUITEM "层叠(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "平铺(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&A)",                ID_WINDOW_ARRANGE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于(&A)",                    ID_APP_ABOUT
+        MENUITEM "帮助文件(&H)",                ID_MENUITEMHELP
+    END
+END
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "打开(&O)",                    ID_FILE_LOAD
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+        MENUITEM SEPARATOR
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于(&A)",                    ID_APP_ABOUT
+        MENUITEM "帮助文件(&H)",                ID_MENUITEMHELP
+    END
+END
+
+IDR_RIGHT_PRJTREE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "展开",                        IDC_EXPAND_ALL_TREE
+        MENUITEM "收缩",                        ID_COLLAPSE_ALL_ENTIRE_TREE
+        MENUITEM SEPARATOR
+        POPUP "添加(&A)"
+        BEGIN
+            MENUITEM "子节点(&S)",                  ID_ADD_CHILD
+            MENUITEM "弟兄节点(&B)",                ID_ADD_SIBLING
+            MENUITEM "子文件(&F)",                  ID_ADD_CCHILD
+        END
+        MENUITEM "重命名(&R)\tF2",              ID_RENAME
+        POPUP "删除(&D)"
+        BEGIN
+            MENUITEM "子节点(&S)",                  ID_DELETE_ITEM
+            MENUITEM "整稞树(&T)",                  ID_DELETE_ALL_ITEMS
+        END
+        MENUITEM SEPARATOR
+        POPUP "排序(&S)"
+        BEGIN
+            MENUITEM "按字母(&A)",                  ID_SORT_SUBTREE_ALPHABETIC
+
+            MENUITEM "按编号(&N)",                  ID_SORT_SUBTREE_NUMERIC
+        END
+        POPUP "统计(&T)"
+        BEGIN
+            MENUITEM "子节点(&S)",                  IDC_COUNT_SUBTREE
+            MENUITEM "整稞树(&E)",                  IDC_COUNT_ENTIRE_TREE
+        END
+        MENUITEM "当前级别",                    ID_CALCULATE_LEVEL
+        MENUITEM SEPARATOR
+        MENUITEM "执行(&E)",                    ID_ITP_EXECUTE
+        MENUITEM "浏览(&W)",                    ID_ITP_BROWSE
+    END
+END
+
+IDR_RIGHT_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "重做(&R)\tCtrl+Y",            ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "&复制\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&粘贴\tCtrl+V",               ID_EDIT_PASTE
+        MENUITEM "&删除\tDel",                  ID_EDIT_DELETE
+        MENUITEM "全选\tCtrl+A",                ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "重新执行PDK",                 ID_SCRIPT_PDKREEXCUTE
+        MENUITEM "生成主框架",                  ID_SCRIPT_MAINFRAME
+        MENUITEM "延时时间",                    ID_MN_DELAYTIME
+        MENUITEM "提示信息",                    ID_SCRIPT_STRTRACE
+        MENUITEM "弹出信息",                    ID_SCRIPT_MESSAGEBOX
+        MENUITEM "设置断点",                    ID_SCRIPT_DEBUGBREAK
+    END
+END
+
+IDR_RIGHT_CFGTREE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        POPUP "添加(&A)"
+        BEGIN
+            MENUITEM "添加节点(&T)",                ID_ADD_CFGCHILD
+            MENUITEM "插入节点(&I)",                ID_ADD_CFGSIBLING
+        END
+        MENUITEM "删除(&D)\tCtrl+D",            ID_ITP_CFGDELETE
+        MENUITEM SEPARATOR
+        POPUP "统计(&T)"
+        BEGIN
+            MENUITEM "子节点(&S)",                  IDC_COUNT_SUBTREE
+            MENUITEM "整稞树(&E)",                  IDC_COUNT_ENTIRE_TREE
+        END
+        MENUITEM "当前级别",                    ID_CALCULATE_LEVEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DLG_MSG DIALOG DISCARDABLE  0, 0, 155, 223
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "消息"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "发送消息",IDC_RADIOSENDMSG,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,2,10,69,10
+    CONTROL         "等待消息",IDC_RADIOWAITMSG,"Button",BS_AUTORADIOBUTTON,
+                    2,22,69,10
+    CONTROL         "条件等待消息",IDC_RADIOIFWAITMSG,"Button",
+                    BS_AUTORADIOBUTTON,2,34,69,10
+    LISTBOX         IDC_LIST_DEFINEMSG,0,49,153,169,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DLGTASK DIALOG DISCARDABLE  0, 0, 188, 136
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    LISTBOX         IDC_LISTTASK,7,7,137,122,LBS_OWNERDRAWVARIABLE | 
+                    LBS_NOINTEGRALHEIGHT | LBS_WANTKEYBOARDINPUT | 
+                    WS_VSCROLL
+END
+
+IDD_DLG_TRACEINFO DIALOG DISCARDABLE  0, 0, 187, 100
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "显示信息"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定(&O)",IDOK,25,73,50,14
+    PUSHBUTTON      "取消(&C)",IDCANCEL,99,72,50,14
+    EDITTEXT        IDC_EDIT_BOXCONTENT,22,35,152,14,ES_AUTOHSCROLL
+    LTEXT           "输入内容",IDC_STATIC,21,22,67,8
+END
+
+IDD_DLGHEADPATH DIALOG DISCARDABLE  0, 0, 235, 117
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "头文件路径"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定(&O)",IDOK,34,84,50,14
+    PUSHBUTTON      "取消(&C)",IDCANCEL,113,83,50,14
+    LTEXT           "头文件路径",IDC_STATIC,16,28,50,8
+    EDITTEXT        IDC_EDITHEADPATH,67,23,119,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTNHEADPATH,191,22,20,14
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 279, 71
+STYLE DS_MODALFRAME | DS_SETFOREGROUND | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于Borer测试"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "版本信息： 01.01.00.01",IDC_STATIC,39,19,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有  beijing borer (C) 2004",IDC_STATIC,40,40,195,
+                    16
+    DEFPUSHBUTTON   "OK",IDOK,240,7,32,14,WS_GROUP
+END
+
+IDD_DQ_YOKE DIALOG DISCARDABLE  0, 0, 205, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "输入"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "确定(&O)",IDOK,74,69,57,17
+    PUSHBUTTON      "取消(&C)",IDCANCEL,139,68,57,17
+    EDITTEXT        IDCE_DQ_AID,73,13,125,17,ES_AUTOHSCROLL
+    LTEXT           "测试人",IDC_STATIC,14,14,52,17
+    EDITTEXT        IDCE_DQ_VERSION,73,34,125,17,ES_AUTOHSCROLL
+    LTEXT           "版本号",IDC_STATIC,14,34,52,17
+END
+
+IDD_DLG_REGISTER DIALOG DISCARDABLE  0, 0, 206, 145
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "请输入用户信息"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,41,123,50,14
+    PUSHBUTTON      "取消",IDCANCEL,109,124,50,14
+    LTEXT           "注意，如不填写全下面的选项将不能生成Licence文件 !您需要做用户鉴权，请把和可执行文件同目录下的 SelfSow.lic文件发送给技术支持部，谢谢!",
+                    IDC_STATIC,9,7,192,30
+    LTEXT           "用户名：",IDC_STATIC,9,43,37,10
+    LTEXT           "单位：",IDC_STATIC,9,59,37,10
+    LTEXT           "联系电话：",IDC_STATIC,9,75,44,11
+    LTEXT           "Email：",IDC_STATIC,9,95,37,10
+    EDITTEXT        IDC_EDIT1,71,44,113,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,71,60,113,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,71,76,113,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,71,95,113,12,ES_AUTOHSCROLL
+END
+
+IDD_FLATEDIT_DIALOG DIALOGEX 0, 0, 387, 348
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "编辑文件"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "",IDC_BUTTON_GROUP,7,7,374,14,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CONTROL         "List1",IDC_LIST_VWITEM,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_EDITLABELS | 
+                    WS_TABSTOP,6,22,375,299,WS_EX_STATICEDGE
+    LTEXT           "提示：以右键菜单增减行。拖拉选中行以更改次序。",
+                    IDC_STATIC,6,328,375,15
+END
+
+IDD_DLGATPARA DIALOG DISCARDABLE  0, 0, 414, 253
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AT"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,323,21,50,14
+    PUSHBUTTON      "取消",IDCANCEL,325,57,50,14
+    EDITTEXT        IDC_EDIT1,16,190,36,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,77,191,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,133,191,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,196,191,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO1,14,214,75,45,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO2,122,213,48,48,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO3,195,213,48,45,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO4,267,213,48,44,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "命令名称",IDC_STATIC,16,14,37,10
+    LTEXT           "命令格式",IDC_STATIC,15,37,40,10
+    LTEXT           "命令说明",IDC_STATIC,15,61,40,10
+    EDITTEXT        IDC_EDITCOMMANDNAME,62,13,210,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDITCOMMANDFORMAT,62,34,214,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDITCOMMANDCAPTION,62,62,215,104,ES_MULTILINE | 
+                    ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+END
+
+IDD_DLG_GOLINE DIALOG DISCARDABLE  0, 0, 170, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "定位到哪一行"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,24,58,50,14
+    PUSHBUTTON      "取消",IDCANCEL,86,57,41,14
+    LTEXT           "请输入你要定位的行数：",IDC_STATIC,17,14,96,11
+    EDITTEXT        IDC_EDIT1,24,34,82,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DLG_MSG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 153
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_DLGTASK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 129
+    END
+
+    IDD_DLG_TRACEINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_DLGHEADPATH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 110
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 272
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_DQ_YOKE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_DLG_REGISTER, DIALOG
+    BEGIN
+        RIGHTMARGIN, 204
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_FLATEDIT_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 381
+    END
+
+    IDD_DLGATPARA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 407
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 246
+    END
+
+    IDD_DLG_GOLINE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR_SCRIPT TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_SCRIPT_MAINFRAME
+    BUTTON      ID_SCRIPT_BEGIN
+    BUTTON      ID_SCRIPT_END
+    BUTTON      ID_MN_DELAYTIME
+    BUTTON      ID_SCRIPT_MESSAGEBOX
+    BUTTON      ID_SCRIPT_STRTRACE
+    BUTTON      ID_SCRIPT_DEBUGBREAK
+END
+
+IDR_MAINFRAME2 TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_MDM_START
+    BUTTON      ID_MDM_STOP
+    BUTTON      ID_FILE_LOAD
+    BUTTON      ID_SAVEFILEC
+    BUTTON      ID_FILESAVEAS
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+    SEPARATOR
+    BUTTON      ID_EDIT_FIND
+    BUTTON      ID_EDIT_REPEAT
+    BUTTON      ID_EDIT_FIND_PREVIOUS
+    BUTTON      ID_EDIT_REPLACE
+    SEPARATOR
+    BUTTON      ID_EDIT_TOGGLE_BOOKMARK
+    BUTTON      ID_EDIT_GOTO_NEXT_BOOKMARK
+    BUTTON      ID_EDIT_GOTO_PREV_BOOKMARK
+    BUTTON      ID_EDIT_CLEAR_ALL_BOOKMARKS
+END
+
+IDR_TB_CSIRUN TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_CSI_RUN
+    BUTTON      ID_CSI_GO
+    BUTTON      ID_CSI_STEPINTO
+    BUTTON      ID_CSI_STEPOVER
+    BUTTON      ID_CSI_STEPOUT
+    BUTTON      ID_CSI_RUNTOEND
+    SEPARATOR
+    BUTTON      ID_CSI_STOP
+    BUTTON      ID_CSI_QUIT
+    BUTTON      ID_CTRL_PDK
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR_SCRIPT      BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+IDR_MAINFRAME2          BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_EDIT_TREE           BITMAP  DISCARDABLE     "res\\List.bmp"
+IDR_TB_CSIRUN           BITMAP  MOVEABLE PURE   "res\\mainfram.bmp"
+IDB_DRAG_SINGLE         BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
+IDB_DRAG_MULTI          BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_BUTTONS             BITMAP  DISCARDABLE     "res\\buttons.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Borer测试"
+    IDR_BorerTYPE           "\nBorer\nBorer\nC++ Files (*.cpp)\n.cpp\nBorer.Document\nBorer Document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OLE_INIT_FAILED     "OLE initialization failed"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_FIND_PREVIOUS   "上一个书签\n上一个书签"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_INDICATOR_COL   "               "
+    ID_EDIT_INDICATOR_READ  "READ"
+    ID_EDIT_INDICATOR_CRLF  "               "
+    ID_EDIT_INDICATOR_POSITION "               "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_COM        "测试任务               "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CSI_STEPINTO         "Step Into (F11)\nStep Into "
+    ID_FILE_LOAD            "打开文档\n打开"
+    ID_PARA_KEYPOINT        "设置键盘范围"
+    ID_MN_DELAYTIME         "延时自定义函数\n延时"
+    ID_CSI_STEPOVER         "Step Over(F10)\nStep Over(F10)"
+    ID_CSI_STEPOUT          "Step Out(Shift +F11)\nStep Out(Shift +F11)"
+    ID_CSI_RUNTOEND         "run to end\nrun to end"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CSI_STOP             "Stop it\nStop"
+    ID_SAVEFILEC            "保存数据\n保存"
+    ID_FILESAVEAS           "保存数据\n另存为"
+    ID_PARA_MATSETUP        "设置MAT表"
+    ID_PARA_PCFSETUP        "设置PCF"
+    ID_FILE_NEWC            "新建文档\n新建"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PARA_DEL             "删除参数配置"
+    ID_PARA_INSERT          "插入参数配置"
+    ID_PARA_SAVE            "保存配置文件"
+    ID_TREE_SAVE            "保存参数配置"
+    ID_SCRIPT_BEGIN         "测试开始自定义函数\n测试开始"
+    ID_SCRIPT_END           "测试结束自定义函数\n测试结束"
+    ID_SCRIPT_MESSAGEBOX    "弹出信息自定义函数\n弹出信息"
+    ID_SCRIPT_STRTRACE      "显示信息自定义函数\n显示信息"
+    ID_SCRIPT_DEBUGBREAK    "断点自定义函数\n断点"
+    ID_SCRIPT_MAINFRAME     "生成主框架\n主框架"
+    ID_CSI_GO               "Go(F5)\nGo(F5)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CSI_RUN              "Run\nRun"
+    ID_PARA_OPEN            "打开配置文件"
+    ID_PARA_ADD             "增加参数配置"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_TOGGLE_BOOKMARK "书签\n书签"
+    ID_EDIT_GOTO_NEXT_BOOKMARK "书签\n下一个书签"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PARA_SAVEAS          "另存配置文件"
+    ID_CSI_QUIT             "重新执行PDK\n重新执行PDK"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Borer测试软件"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "为活动文档打开另一个窗口\n新建窗口"
+    ID_WINDOW_ARRANGE       "将图标排列在窗口底部\n排列图标"
+    ID_WINDOW_CASCADE       "排列窗口成相互重叠\n层叠窗口"
+    ID_WINDOW_TILE_HORZ     "排列窗口成互不重叠\n平铺窗口"
+    ID_WINDOW_TILE_VERT     "排列窗口成互不重叠\n平铺窗口"
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+    AFX_IDS_MDICHILD        "激活该窗口"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PARA_CREATEFLASH     "生成 Flash"
+    ID_MDMBAR               "\n显示DEBUG数据"
+    ID_EDIT_GOLINE          "定位到指定的行\n定位"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""editcmd.h""\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\Borer.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_LOAD,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_F3,          ID_EDIT_REPEAT,         VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Borer MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Borer\0"
+            VALUE "LegalCopyright", "Copyright (C) 1998\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Borer.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Borer Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Unknown language: 0xD, 0x1 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_HEB)
+#ifdef _WIN32
+LANGUAGE 0xD, 0x1
+#pragma code_page(1255)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_NODROP              CURSOR  DISCARDABLE     "res\\nodrop.cur"
+IDC_DROP_MOVE_SON       CURSOR  DISCARDABLE     "res\\cur00004.cur"
+IDC_DROP_MOVE_ROOT      CURSOR  DISCARDABLE     "res\\drop_mov.cur"
+IDC_DROP_MOVE_ABOVE     CURSOR  DISCARDABLE     "res\\Dragmove.cur"
+IDC_DROP_COPY_SON       CURSOR  DISCARDABLE     "res\\cur00002.cur"
+IDC_DROP_COPY_ROOT      CURSOR  DISCARDABLE     "res\\tfdropcopy.cur"
+IDC_DROP_COPY_ABOVE     CURSOR  DISCARDABLE     "res\\cur00001.cur"
+#endif    // Unknown language: 0xD, 0x1 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\Borer.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

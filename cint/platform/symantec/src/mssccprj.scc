@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[libcint.mak]
+SCC_Aux_Path = "E:\备份\自己文件\VSS"
+SCC_Project_Name = "$/borer/BORER/cint/platform/symantec/src", CTBAAAAA

@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cint", "cint.vcproj", "{FEFA404D-1429-420F-98AE-5C3E307D65F4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{893C03FC-F3FE-4B56-BB41-C689587B7BAC} = {893C03FC-F3FE-4B56-BB41-C689587B7BAC}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcint", "..\src\libcint\libcint.vcproj", "{893C03FC-F3FE-4B56-BB41-C689587B7BAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEFA404D-1429-420F-98AE-5C3E307D65F4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FEFA404D-1429-420F-98AE-5C3E307D65F4}.Debug|Win32.Build.0 = Debug|Win32
+		{FEFA404D-1429-420F-98AE-5C3E307D65F4}.Release|Win32.ActiveCfg = Release|Win32
+		{FEFA404D-1429-420F-98AE-5C3E307D65F4}.Release|Win32.Build.0 = Release|Win32
+		{893C03FC-F3FE-4B56-BB41-C689587B7BAC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{893C03FC-F3FE-4B56-BB41-C689587B7BAC}.Debug|Win32.Build.0 = Debug|Win32
+		{893C03FC-F3FE-4B56-BB41-C689587B7BAC}.Release|Win32.ActiveCfg = Release|Win32
+		{893C03FC-F3FE-4B56-BB41-C689587B7BAC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

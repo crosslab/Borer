@@ -1,0 +1,26 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: libcint1 - Win32 Debug--------------------
+</h3>
+
+
+Microsoft (R) Program Maintenance Utility   Version 6.00.9782.0
+Copyright (C) Microsoft Corp 1988-1998. All rights reserved.
+
+No configuration specified. Defaulting to libcint - Win32 Release.
+Warning: cannot find "libcint.dep"
+ if not exist ".\Release/" mkdir ".\Release"
+NMAKE : fatal error U1073: don't know how to make '..\API.CXX'
+Stop.
+Error executing NMAKE.
+
+
+
+<h3>Results</h3>
+libcint1.exe - 1 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

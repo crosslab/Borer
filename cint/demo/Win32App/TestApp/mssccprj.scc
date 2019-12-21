@@ -1,0 +1,9 @@
+SCC = This is a Source Code Control file
+
+[TestApp.dsp]
+SCC_Aux_Path = "E:\备份\自己文件\VSS"
+SCC_Project_Name = "$/borer/BORER/cint/demo/Win32App/TestApp", FUCAAAAA
+
+[TestApp.dsw]
+SCC_Aux_Path = "E:\备份\自己文件\VSS"
+SCC_Project_Name = "$/borer/BORER/cint/demo/Win32App/TestApp", FUCAAAAA

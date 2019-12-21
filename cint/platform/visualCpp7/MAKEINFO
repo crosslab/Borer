@@ -1,0 +1,45 @@
+##########################################################################
+# platform\visual\MAKEINFO
+# Visual C++ 4.0 platform dependent file
+# Note: 
+#  There is a problem with '-C' keep comment option for VC++
+#  preprocessor when dealing with windows.h. So this is not added
+#  as CPREP option
+##########################################################################
+
+CPPPREP = cl -E -C -Ic:\cint\include -I\msdev\include  -Dexternalref=extern  -I. -I\users\root\include -I\users\root\src -I\users\root\cint  -D__CINT__
+CPREP = cl -E -Ic:\cint\include -I\msdev\include  -Dexternalref=extern  -I. -I\users\root\include -I\users\root\src -I\users\root\cint  -D__CINT__
+
+CPPSRCPOST = .cxx
+CSRCPOST   = .c
+CPPHDRPOST = .h
+CHDRPOST   = .h
+OBJPOST    = .obj
+DLLPOST    = .dll
+
+##########################################################################
+
+CC		= cl -G5 -GR -GX -MD -nologo
+CPP		= cl -G5 -GR -GX -MD -nologo
+LD      = link
+AR      = link
+AROPT   = -out:
+
+# libraries
+MAINO	    = $(CINTSYSDIR)/main/G__cppmain.obj
+CINTLIB     = $(CINTSYSDIR)/src/G__ci.lib
+#READLINEA   = /usr/lib/libreadline.lib
+APIO	    = Api.obj Class.obj BaseCls.obj Type.obj DataMbr.obj Method.obj MethodAr.obj CallFunc.obj Typedf.obj Apiif.obj Token.obj
+#RANLIB	    = /usr/bin/ranlib
+STDLIBS     = vc7strm.obj stdstrct.obj
+PLATFORM    =
+
+
+##########################################################
+# Control default behavior of cint command line input
+##########################################################
+#INPUTMODE = C++
+#INPUTMODE = root
+INPUTMODE = cint
+#INPUTMODELOCK = on
+INPUTMODELOCK = off
